@@ -10,15 +10,15 @@ const Home = () => {
         {name:'Dr. Md. Mahfuzur Rahman', designation:'Assistant Professor', education:'PhD (Computer Science), University of Manitoba, Canada'},
         {name:'Dr. Lamia Iftekhar', designation:'Associate Professor', education:'Ph.D from Dartmouth College, USA'}
         ];
+    const courses=[{name:'Data Science : Complete Alteryx Bootcamp', instructor:'Dr. Shazzad Hosain' , rating:'4.9', price:'$12.00'},
+                {name:'Data Science and Machine Learning with Python and Libraries', instructor:'Dr. Mohammad Rashedur Rahman', rating:'4.8',price:'11.99'},
+                {name:''}]
     return (
         <div id="tutor">
            <h2>Respective Tutors</h2>
-            <TutorList tutors={tutors[0]}></TutorList>
-            <TutorList tutors={tutors[1]}></TutorList>
-            <TutorList tutors={tutors[2]}></TutorList>
-            <TutorList tutors={tutors[3]}></TutorList>
-            <TutorList tutors={tutors[4]}></TutorList>
-            <TutorList tutors={tutors[5]}></TutorList>
+            <ul>
+                {tutors.map(tutors =><TutorList tutors={tutors}></TutorList>)}
+            </ul>
         </div>
     );
 };
