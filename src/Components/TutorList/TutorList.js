@@ -4,7 +4,7 @@ const TutorList = (props) => {
     const tutorList_design={
         border: '1px solid gray',
         borderRadius:'5px',
-        backgroundColor:'#F36B47',
+        backgroundColor:'#9A1111',
         height:'200px',
         width:'200px',
         padding:'20px',
