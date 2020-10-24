@@ -39,6 +39,7 @@ const Courses = (props) => {
             <p>{rating}</p>
             <p>${price}</p>
             <button style={button} onClick={()=>props.handleAddCourse(props.courses)}>Add to cart</button>
+            
            </div>
     );
 };

@@ -35,6 +35,7 @@ function App() {
   const newCart= [...cart,courses];
   setCart(newCart);
 }
+
   return (
     <div>
        <Router>
@@ -49,7 +50,8 @@ function App() {
           <Route path="/explore_courses" component={Courses}>
           <h2 className="Title">Courses</h2>
           <ul>{courses.map(courseList =>
-              <Courses  handleAddCourse ={handleAddCourse} courses={courseList} key={courses.id}
+              <Courses  handleAddCourse ={handleAddCourse} 
+              courses={courseList} key={courses.id}
               ></Courses>)}</ul>
           </Route>
            <Route path="/cart"  component={Cart}>

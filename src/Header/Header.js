@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <div className="header">
             <nav>
-                <Switch>
+                {/* <Switch>
                     <Link to="/home"><a href="">Home <FontAwesomeIcon icon={faHome} /></a>  
                     </Link>
-                </Switch>
+                </Switch> */}
                 <Switch>
                     <Link to="/tutors"><a href="">Tutors <FontAwesomeIcon icon={faChalkboardTeacher} /></a>
                     </Link>
@@ -26,7 +26,7 @@ const Header = () => {
                     </Link>
                 </Switch>
                 <Switch>
-                    <Link to="/cart"><a href="">Cart<FontAwesomeIcon icon={faCartArrowDown} /></a>
+                  <Link to="/cart"><a href="">Cart<FontAwesomeIcon icon={faCartArrowDown} /></a>
                     </Link>
                 </Switch>
                 
