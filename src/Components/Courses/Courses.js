@@ -33,12 +33,12 @@ const Courses = (props) => {
     }
     return (
            <div style={courseList_design}>
-            <img style={image}src={img}></img>
+            <img style={image}src={img} alt=""></img>
             <h4>{name}</h4>
             <p>{instructor}</p>
             <p>{rating}</p>
-            <p>{price}</p>
-            <button style={button} onClick={()=>props.handleAddCourse(props.courseList)}>Add to cart</button>
+            <p>${price}</p>
+            <button style={button} onClick={()=>props.handleAddCourse(props.courses)}>Add to cart</button>
            </div>
     );
 };
