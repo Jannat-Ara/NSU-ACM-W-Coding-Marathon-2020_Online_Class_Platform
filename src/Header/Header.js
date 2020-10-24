@@ -2,7 +2,7 @@ import React from 'react';
 import {Switch,Link} from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee ,faHeart,faCartArrowDown, faUser, faHome, faChalkboardTeacher} from '@fortawesome/free-solid-svg-icons';
+import { faHeart,faCartArrowDown, faUser, faHome, faChalkboardTeacher} from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {

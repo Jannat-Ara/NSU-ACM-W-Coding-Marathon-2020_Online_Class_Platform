@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Courses = (props) => {
-    const {name, instructor, rating,price} = props.courses;
+    const {img, name, instructor, rating,price} = props.courses;
     const courseList_design={
         border: '1px solid gray',
         borderRadius:'5px',
-        backgroundColor:'#BD4242',
-        height:'270px',
+        backgroundColor:'#AA9A9A',
+        height:'350px',
         width:'300px',
         padding:'20px',
         margin:'10px',
@@ -23,13 +23,22 @@ const Courses = (props) => {
         backgroundColor:'goldenrod',
 
     }
+    const image={
+        width:'250px',
+        height:'100px',
+        textAlign:'center',
+        display: 'block',
+        marginLeft:'auto',
+        marginRight:'auto'
+    }
     return (
            <div style={courseList_design}>
+            <img style={image}src={img}></img>
             <h4>{name}</h4>
             <p>{instructor}</p>
             <p>{rating}</p>
             <p>{price}</p>
-            <button style={button}>Add to cart</button>
+            <button style={button} onClick={()=>props.handleAddCourse(props.courseList)}>Add to cart</button>
            </div>
     );
 };
