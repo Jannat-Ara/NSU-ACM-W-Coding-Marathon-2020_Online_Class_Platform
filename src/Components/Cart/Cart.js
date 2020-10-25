@@ -34,11 +34,10 @@ const Cart = (props) => {
     return (
         <div style ={cart_Style} >
             <h2>Cart History<FontAwesomeIcon icon={faCartArrowDown} /></h2>
-            <p>Courses Bought        :{cart.length}</p>
-            <p>Total Price           :${total.toFixed(2)}</p>
-            <p>Discount              :${discount.toFixed(2)}</p>
-            <p>Subtotal              :${subtotal.toFixed(2)}</p>
-            <p></p>
+            <h4>Courses Bought        :{cart.length}</h4>
+            <h4>Total Price           :${total.toFixed(2)}</h4>
+            <h4>Discount              :${discount.toFixed(2)}</h4>
+            <h4>Subtotal              :${subtotal.toFixed(2)}</h4>
             
         </div>
     );
