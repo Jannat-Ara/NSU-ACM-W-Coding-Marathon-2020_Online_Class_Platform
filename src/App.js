@@ -52,7 +52,11 @@ function App() {
           <h2 >Coming Soon...</h2>
                 <ul>{courses_new.map(courses_new =><newCourses newCourses={courses_new}></newCourses>)}</ul>
           </Route>  
-          <Route path="/tutors" component={TutorList}>
+          <Route path="/" component={TutorList} exact>
+          <h2 className="Title">Respective Tutors</h2>
+                <ul>{tutors.map(tutors =><TutorList tutors={tutors} key={tutors.id}></TutorList>)}</ul>
+          </Route>
+          <Route path="/tutors" component={TutorList} exact>
           <h2 className="Title">Respective Tutors</h2>
                 <ul>{tutors.map(tutors =><TutorList tutors={tutors} key={tutors.id}></TutorList>)}</ul>
           </Route>
